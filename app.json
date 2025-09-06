@@ -11,13 +11,17 @@
     "ios": {
       "supportsTablet": true
     },
-     "splash": {
-    "backgroundColor": "#0F0D23"
-  },
-    "platforms": ["ios", "web"] ,
+    "splash": {
+      "backgroundColor": "#0F0D23"
+    },
+    "platforms": [
+      "ios",
+      "web",
+      "android"
+    ],
     "android": {
       "adaptiveIcon": {
-        "foregroundImage":  "./assets/icons/logo.png",
+        "foregroundImage": "./assets/icons/logo.png",
         "backgroundColor": "#0F0D23"
       },
       "edgeToEdgeEnabled": true,
@@ -26,7 +30,7 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon":  "./assets/images/logo.png"
+      "favicon": "./assets/images/logo.png"
     },
     "plugins": [
       "expo-router",
@@ -36,13 +40,20 @@
           "image": "./assets/images/logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#0F0D23"
+
         }
       ],
       "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ef7e8df8-eac8-4445-934e-236b5b96d5ff"
+      }
     }
   }
 }
